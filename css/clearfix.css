@@ -1,0 +1,16 @@
+::selection { background: #e2e2e2; color: #fff;}
+
+/* ---- Clearfix ---- */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+ 
+.clearfix:after {
+  clear: both;
+}
+ 
+.clearfix {
+  *zoom: 1;
+}

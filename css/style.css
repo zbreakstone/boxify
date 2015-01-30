@@ -1,0 +1,84 @@
+@import url(http://fonts.googleapis.com/css?family=Nunito:400,300,700);
+/* ---- @imports go above ---- */
+
+* { box-sizing: border-box; }
+
+body {
+	font: 400 14px/1.42857143 'Nunito';
+	color: #333;
+}
+a {
+	color: #323a45;
+	text-decoration: none;
+	transition: all 0.25s ease;
+}
+a:hover {
+	color: #73d0da;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+header.top-header {
+	width: 100%;
+	background: url(../img/grid.png) top left repeat, url(../img/hero-01.jpg) top left no-repeat;
+	background-size: auto, 100%;
+}
+	.top-header .header-section {
+		padding: 60px 0;
+		color: #fff;
+	}
+	.top-header .header-section a {
+		color: #fff;
+	}
+	.top-header .header-section a:hover {
+		color: #73d0da;
+	}
+		.header-section .navbar {
+			position: relative;
+			width: 100%;
+		}
+			.header-section .navbar .logo {
+				display: block;
+				width: 50%;
+				float: left;
+			}
+				.header-section .navbar .logo img {
+					vertical-align: middle;
+				}
+			.header-section .navbar .nav-btn {
+					display: block;
+					width: 50%;
+					float: right;
+			}
+				.nav-btn span, .nav-btn span::before, .nav-btn span::after {
+					content: '';
+					position: absolute;
+					display: block;
+					width: 35px;
+					height: 5px;
+					background: #fff;
+					cursor: pointer;
+					border-radius: 1px;
+				}
+					.nav-btn span::before {
+						top: -10px;
+					}
+					.nav-btn span::after {
+						bottom: -10px;
+					}
+
+
+
+
+
+
+
+
+
+
+
+
+
