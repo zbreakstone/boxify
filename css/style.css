@@ -15,7 +15,11 @@ a {
 a:hover {
 	color: #73d0da;
 }
-
+h1 {
+	font-weight: 300;
+	font-size: 45px;
+	line-height: 1.1em;
+}
 .container {
 	max-width: 1170px;
 	margin: 0 auto;
@@ -23,17 +27,18 @@ a:hover {
 
 header.top-header {
 	max-width: 100%;
-	background: url(../img/grid.png) top left repeat, url(../img/hero-01.jpg) top left no-repeat;
-	background-size: auto, 100%;
+	background: url(../img/grid.png) top left repeat, url(../img/hero-01.jpg) center center no-repeat;
+	background-size: auto, cover;
 }
 	.top-header .header-section {
 		padding: 60px 0;
 		color: #fff;
+		min-height: 800px;
 	}
-	.top-header .header-section a {
+	.top-header .header-section .navbar a {
 		color: #fff;
 	}
-	.top-header .header-section a:hover {
+	.top-header .header-section .navbar a:hover {
 		color: #73d0da;
 	}
 		.header-section .navbar {
@@ -98,6 +103,36 @@ header.top-header {
 						bottom: 0;
 						transform: rotate(-45deg);
 					}
+		.header-section h1 {
+			margin: 200px 0 45px 0;
+		}
+		.btn {
+			border: 2px solid #fff;
+			padding: 20px 50px;
+			margin: 0 10px 10px 0;
+			display: inline-block;
+			font-size: 16px;
+			border-radius: 3px;
+		}
+			.btn.btn-white {
+				background: #fff;
+				color: #4b98a9;
+			}
+			.btn.btn-white:hover {
+				background: #73d0da;
+				color: #fff;
+				border-color: #73d0da;
+			}
+			.btn.btn-ghost {
+				color: #fff;
+			}
+			.btn.btn-ghost:hover {
+				border-color: #73d0da;
+				color: #73d0da;
+			}
+			.btn i {
+				margin: 0 0 0 5px;
+			}
 
 
 
