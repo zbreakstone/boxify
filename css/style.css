@@ -11,6 +11,7 @@ a {
 	color: #323a45;
 	text-decoration: none;
 	transition: all 0.25s ease;
+	cursor: pointer;
 }
 a:hover {
 	color: #73d0da;
@@ -20,11 +21,27 @@ h1 {
 	font-size: 45px;
 	line-height: 1.1em;
 }
+h2 {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 22px;
+}
+p {
+	line-height: 25px;
+	margin: 1em 0;
+}
+i {
+	margin: 0 0 0 5px;
+}
 .container {
 	max-width: 1170px;
 	margin: 0 auto;
 }
+.text-center {
+	text-align: center;
+}
 
+/* ---- Begin Top Header ---- */
 header.top-header {
 	max-width: 100%;
 	background: url(../img/grid.png) top left repeat, url(../img/hero-01.jpg) center center no-repeat;
@@ -63,10 +80,12 @@ header.top-header {
 				position: relative;
 				right: 45px;
 				top: 5px;
+				margin: 0;
+				line-height: inherit;
 			}
 			.header-section .navbar .nav-btn .nav-link {
-				height: 25px;
-				width: 35px;
+				/*height: 25px;
+				width: 35px;*/
 				display: block;
 			}
 				.nav-btn span, .nav-btn span::before, .nav-btn span::after {
@@ -130,13 +149,94 @@ header.top-header {
 				border-color: #73d0da;
 				color: #73d0da;
 			}
-			.btn i {
+			/*.btn i {
 				margin: 0 0 0 5px;
+			}*/
+
+/* ---- Begin Features Section ---- */
+	.features-section article {
+		padding: 60px 0;
+	}
+
+	/* ---- Begin Video Section ---- */
+		.features-section article.video {
+			background: #fff;
+		}
+		.features-section .video h2 i {
+			vertical-align: middle;
+		}
+		.features-section .video h2 i {
+			font-size: 50px;
+		}
+
+	/* ---- Begin Feature Slider Section */
+		article.feature-slider {
+			padding: 0;
+		}
+		.features-section .feature-img, .features-section .feature-content {
+			min-height: 400px;
+		}
+		.features-section .feature-img {
+			position: relative;
+			display: inline-block;
+			float: left;
+			width: 50%;
+			background: url(../img/grid.png) top left repeat, url(../img/features-intro-01.jpg) center center no-repeat;
+			background-size: auto, cover;
+		}
+			.feature-img img {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		.features-section .feature-content {
+			position: relative;
+			display: inline-block;
+			float: left;
+			width: 50%;
+			background: #3F6184;
+			color: #fff;
+		}
+			.feature-content div {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: calc(100% - 200px);
+			}
+			.feature-content a {
+				color: #73d0da;
+				transition: all 0.25s ease;
+			}
+			.feature-content a:hover {
+				color: #fff;
 			}
 
-
-
-
+/* ---- Experimental Slider Below ---- */
+/*div.slider {
+  width: 100px;
+  overflow: hidden;
+}
+.slider ul.slider-content {
+	position: relative;
+  width: 400px;
+  height: 12px;
+}
+.slider ul.slider-content li {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+}
+.slider ul.slider-btns {}
+.slider ul.slider-btns li {
+  display: inline-block;
+}
+.slide {
+  left: -100px;
+  transition: left .25s ease;
+}*/
+/* ---- End Experiemental Slider ---- */
 
 
 
