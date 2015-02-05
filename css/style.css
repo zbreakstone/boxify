@@ -84,8 +84,9 @@ header.top-header {
 				line-height: inherit;
 			}
 			.header-section .navbar .nav-btn .nav-link {
-				/*height: 25px;
-				width: 35px;*/
+				height: 25px;
+				position: relative;
+				top: -20px;
 				display: block;
 			}
 				.nav-btn span, .nav-btn span::before, .nav-btn span::after {
@@ -170,7 +171,7 @@ header.top-header {
 		}
 
 	/* ---- Begin Feature Slider Section */
-		article.feature-slider {
+		/*article.feature-slider {
 			padding: 0;
 		}
 		.features-section .feature-img, .features-section .feature-content {
@@ -211,32 +212,57 @@ header.top-header {
 			}
 			.feature-content a:hover {
 				color: #fff;
+			}*/
+
+/* ---- Begin Feature Slider Section */
+		article.feature-slider {
+			padding: 0;
+		}
+		.features-section .feature-img, .features-section .feature-content {
+			min-height: 400px;
+		}
+		.features-section .feature-img {
+			position: relative;
+			display: inline-block;
+			float: left;
+			width: 50%;
+			background: url(../img/grid.png) top left repeat, url(../img/features-intro-01.jpg) center center no-repeat;
+			background-size: auto, cover;
+		}
+			.feature-img img {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				    -ms-transform: translate(-50%, -50%);
+				        transform: translate(-50%, -50%);
+			}
+		.features-section .feature-content {
+			position: relative;
+			display: inline-block;
+			float: left;
+			width: 50%;
+			background: #3F6184;
+			color: #fff;
+		}
+			.feature-content div {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				    -ms-transform: translate(-50%, -50%);
+				        transform: translate(-50%, -50%);
+				width: calc(100% - 200px);
+			}
+			.feature-content a {
+				color: #73d0da;
+				-webkit-transition: all 0.25s ease;
+				        transition: all 0.25s ease;
+			}
+			.feature-content a:hover {
+				color: #fff;
 			}
 
-/* ---- Experimental Slider Below ---- */
-/*div.slider {
-  width: 100px;
-  overflow: hidden;
-}
-.slider ul.slider-content {
-	position: relative;
-  width: 400px;
-  height: 12px;
-}
-.slider ul.slider-content li {
-  position: relative;
-  display: inline-block;
-  width: 100px;
-}
-.slider ul.slider-btns {}
-.slider ul.slider-btns li {
-  display: inline-block;
-}
-.slide {
-  left: -100px;
-  transition: left .25s ease;
-}*/
-/* ---- End Experiemental Slider ---- */
 
 
 
