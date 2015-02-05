@@ -40,6 +40,12 @@ i {
 .text-center {
 	text-align: center;
 }
+.half {
+	position: relative;
+	display: inline-block;
+	float: left;
+	width: 50%;
+}
 
 /* ---- Begin Top Header ---- */
 header.top-header {
@@ -178,10 +184,6 @@ header.top-header {
 			min-height: 400px;
 		}
 		.features-section .feature-img {
-			position: relative;
-			display: inline-block;
-			float: left;
-			width: 50%;
 			background: url(../img/grid.png) top left repeat, url(../img/features-intro-01.jpg) center center no-repeat;
 			background-size: auto, cover;
 		}
@@ -192,10 +194,6 @@ header.top-header {
 				transform: translate(-50%, -50%);
 			}
 		.features-section .feature-content {
-			position: relative;
-			display: inline-block;
-			float: left;
-			width: 50%;
 			background: #3F6184;
 			color: #fff;
 		}
@@ -213,6 +211,82 @@ header.top-header {
 			.feature-content a:hover {
 				color: #fff;
 			}
+
+		/* ---- Begin Features Main Section ---- */
+			article.features-main {
+				padding: 130px 0;
+			}
+			.feature {
+				display: inline-block;
+				width: calc(100% / 3);
+				padding: 0 15px;
+				float: left;
+			}
+			.feature-icon {
+				display: inline-block;
+				float: left;
+				height: 90px;
+				width: 90px;
+				margin: 0 25px 0 0;
+				border: 2px solid #4e9ba3;
+				border-radius: 50%;
+				font-size: 25px;
+				line-height: 90px;
+				text-align: center;
+			}
+				.feature-icon i {
+					color: #4e9ba3;
+					margin: 0;
+				}
+			.feature-description {
+				display: inline-block;
+				float: left;
+				width: calc(100% - 115px);
+			}
+				.feature-description p {
+					color: #778899;
+					margin: 1em 0 20px 0;
+				}
+				.feature-description a {
+					text-transform: uppercase;
+				}
+
+			/* ---- Begin Features Product Section ---- */
+			article.features-product {
+				padding: 100px 0;
+				min-height: 600px;
+				background: url(../img/grid.png) top left repeat, url(../img/showcase-bg-fixed-01.jpg) center center no-repeat fixed;
+				background-size: auto, cover;
+			}
+				.features-product .phone {
+					position: relative;
+					top: -60px;
+					left: 20%;
+					min-height: 676px;
+					width: 359px;
+					background: url(../img/iphone-skeleton.png) center center no-repeat;
+				}
+				.features-product blockquote > div.avatar {
+					display: inline-block;
+					float: left;
+					width: 64px;
+					height: 64px;
+					border: 2px solid #fff;
+					border-radius: 50%;
+					margin: 0 20px 0 0;
+				}
+				.features-product blockquote > p {
+					display: inline-block;
+					float: left;
+					width: calc(100% - 84px);
+				}
+				.features-product blockquote > .quote-logo {
+					display: inline-block;
+					float: left;
+					width: calc(100% - 84px);
+					margin: 0 20px 0 0;
+				}
+
 
 
 
