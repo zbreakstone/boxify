@@ -1,5 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Nunito:400,300,700);
-/* ---- @imports go above ---- */
+/* ========================================
+ @imports go above
+ ======================================== */
 
 * { box-sizing: border-box; }
 html, html a {
@@ -30,6 +32,7 @@ h2 {
 	line-height: 22px;
 }
 p {
+	color: #778899;
 	line-height: 25px;
 	margin: 1em 0;
 }
@@ -45,12 +48,13 @@ i {
 }
 .half {
 	position: relative;
-	display: inline-block;
-	float: left;
 	width: 50%;
+	float: left;
 }
 
-/* ---- Begin Top Header ---- */
+/* ========================================
+ Begin Top Header
+ ======================================== */
 header.top-header {
 	max-width: 100%;
 	background: url(../img/grid.png) top left repeat, url(../img/hero-01.jpg) center center no-repeat;
@@ -91,6 +95,7 @@ header.top-header {
 				top: 5px;
 				margin: 0;
 				line-height: inherit;
+				color: #fff;
 			}
 			.header-section .navbar .nav-btn .nav-link {
 				height: 25px;
@@ -163,12 +168,16 @@ header.top-header {
 				margin: 0 0 0 5px;
 			}*/
 
-/* ---- Begin Features Section ---- */
+/* ========================================
+ Begin Features Section
+ ======================================== */
 	.features-section article {
 		padding: 60px 0;
 	}
 
-	/* ---- Begin Video Section ---- */
+	/* ========================================
+	 Begin Video Section
+	 ======================================== */
 		.features-section article.video {
 			background: #fff;
 		}
@@ -179,7 +188,8 @@ header.top-header {
 			font-size: 50px;
 		}
 
-	/* ---- Begin Feature Slider Section */
+	/* ========================================
+	 Begin Feature Slider Section */
 		article.feature-slider {
 			padding: 0;
 		}
@@ -207,6 +217,9 @@ header.top-header {
 				transform: translate(-50%, -50%);
 				width: calc(100% - 200px);
 			}
+			.feature-content p {
+				color: #fff;
+			}
 			.feature-content a {
 				color: #73d0da;
 				transition: all 0.25s ease;
@@ -215,7 +228,9 @@ header.top-header {
 				color: #fff;
 			}
 
-		/* ---- Begin Features Main Section ---- */
+		/* ========================================
+		 Begin Features Main Section
+		 ======================================== */
 			article.features-main {
 				padding: 130px 0;
 			}
@@ -254,7 +269,9 @@ header.top-header {
 					text-transform: uppercase;
 				}
 
-			/* ---- Begin Features Product Section ---- */
+			/* ========================================
+			 Begin Features Product Section
+			 ======================================== */
 			article.featured-product {
 				padding: 100px 0;
 				min-height: 600px;
@@ -262,12 +279,12 @@ header.top-header {
 				background-size: auto, cover;
 				color: #fff;
 			}
-				.featured-product .phone {
+				.featured-product .half .phone {
 					position: relative;
 					top: -60px;
 					left: 20%;
 					/*z-index: 1;*/
-					min-height: 676px;
+					min-height: 670px;
 					width: 359px;
 					background: url(../img/iphone-skeleton.png) center center no-repeat;
 				}
@@ -282,6 +299,9 @@ header.top-header {
 					}
 				.featured-product h2 {
 					font-size: 22px;
+				}
+				.featured-product p {
+					color: #fff;
 				}
 				.featured-product blockquote {
 					margin: 40px 0 0 0;
@@ -304,7 +324,163 @@ header.top-header {
 					margin: 0 0 25px 0;
 					font-style: italic;
 				}
+		
+		/* ========================================
+		Begin Screenshots Section
+		======================================== */
+		section.screenshots-section {}
 
+			/* ========================================
+			Begin Screenshots Intro Section
+			======================================== */
+			article.screenshots-intro {
+				padding: 170px 0 100px 0;
+			}
+				.screenshots-intro h2 {
+					font-size: 22px;
+					margin-bottom: 20px;
+				}
+				.screenshots-intro p {
+					margin-bottom: 25px;
+				}
+				.screenshots-intro a {
+					color: #73d0da;
+				}
+				.screenshots-intro a:hover, .screenshots-intro a:focus {
+					color: #778899;
+				}
+
+			/* ========================================
+			Begin Screenshots
+			======================================== */
+			ul.screenshot-grid {
+				max-width: 100%;
+				list-style: none;
+				font-size: 0; /* Necessary to remove inherent spacing from li in html */
+			}
+				.screenshot-grid li {
+					position: relative;
+					float: left; /* Necessary to remove inherent spacing from li in html */
+					width: calc(100% / 4);
+				}
+				.screenshot-grid li > figure {
+					width: 100%;
+					overflow: hidden;
+				}
+					.screenshot-grid li > figure > img {
+						width: 100%;
+						transition: all .5s ease;
+					}
+					.screenshot-grid figcaption {
+						position: absolute;
+						top: 0;
+						left: 0;
+						padding: 25% 0;
+						display: block;
+						opacity: 0;
+						width: 100%;
+						height: 100%;
+						background: rgba(63, 97, 132, 0.85);
+						font-size: 14px;
+						text-transform: uppercase;
+						transition: all .5s ease;
+					}
+					.screenshot-grid figure:hover img {
+						transform: scale(1.25);
+					}
+					.screenshot-grid figure:hover figcaption, .screenshot-grid figure:hover figcaption > div {
+						opacity: 1;
+					}
+						.screenshot-grid div.caption {
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							text-align: center;
+						}
+							.screenshot-grid .caption a, .screenshot-grid .caption i, .screenshot-grid .caption p {
+								color: #fff;
+							}
+							.screenshot-grid .caption a > i {
+								font-size: 35px;
+							}
+
+
+
+
+
+
+
+
+
+/* Visibilty Classes */
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+/* Responsive Visibilty Classes */
+
+	.visible-phone {
+	    display: none !important;
+	}
+
+	.visible-tablet {
+	    display: none !important;
+	}
+
+	.hidden-desktop {
+	    display: none !important;
+	}
+
+	@media (max-width: 767px) {
+	    .visible-phone {
+	        display: inherit !important;
+	    }
+
+	    .hidden-phone {
+	        display: none !important;
+	    }
+
+	    .hidden-desktop {
+	        display: inherit !important;
+	    }
+
+	    .visible-desktop {
+	        display: none !important;
+	    }
+	}
+
+	@media (min-width: 768px) and (max-width: 1139px) {
+	    .visible-tablet {
+	        display: inherit !important;
+	    }
+
+	    .hidden-tablet {
+	        display: none !important;
+	    }
+
+	    .hidden-desktop {
+	        display: inherit !important;
+	    }
+
+	    .visible-desktop {
+	        display: none !important ;
+	    }
+	}
 
 
 
