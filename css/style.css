@@ -354,14 +354,15 @@ header.top-header {
 			Begin Screenshots
 			======================================== */
 			ul.screenshot-grid {
-				max-width: 100%;
+				max-width: calc(100% - .5px);
 				list-style: none;
 				font-size: 0; /* Necessary to remove inherent spacing from li in html */
+				margin: 0 auto;
 			}
 				.screenshot-grid li {
 					position: relative;
 					float: left; /* Necessary to remove inherent spacing from li in html */
-					width: calc((100% - .5px) / 4);
+					width: calc(100% / 4);
 				}
 				.screenshot-grid li > figure {
 					width: 100%;
