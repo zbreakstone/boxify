@@ -361,7 +361,7 @@ header.top-header {
 				.screenshot-grid li {
 					position: relative;
 					float: left; /* Necessary to remove inherent spacing from li in html */
-					width: calc(100% / 4);
+					width: calc((100% - .5px) / 4);
 				}
 				.screenshot-grid li > figure {
 					width: 100%;
@@ -369,7 +369,6 @@ header.top-header {
 				}
 					.screenshot-grid li > figure > img {
 						width: 100%;
-						transition: all .5s ease;
 					}
 					.screenshot-grid figcaption {
 						position: absolute;
@@ -386,7 +385,8 @@ header.top-header {
 						transition: all .5s ease;
 					}
 					.screenshot-grid figure:hover img {
-						transform: scale(1.25);
+						transform: scale(1.3);
+						transition: all .5s ease;
 					}
 					.screenshot-grid figure:hover figcaption, .screenshot-grid figure:hover figcaption > div {
 						opacity: 1;
