@@ -557,6 +557,9 @@ Begin Media Queries
 	.feature {
 		width: 100%;
 	}
+	article.screenshots-intro {
+		padding: 100px 0;
+	}
 	.screenshot-grid li {
 		width: 100%;
 	}
