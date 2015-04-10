@@ -4,16 +4,17 @@
  ======================================== */
 
 * { box-sizing: border-box; }
-html, html a {
+html {
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 	 -webkit-font-smoothing: antialiased;
+	 font: 400 14px/1.42857143 'Nunito';
 }
 body {
-	font: 400 14px/1.42857143 'Nunito';
 	color: #333;
 }
 a {
 	color: #323a45;
+	font: 400 1rem/1.42857143rem 'Nunito';
 	text-decoration: none;
 	transition: all 0.25s ease;
 	cursor: pointer;
@@ -23,26 +24,27 @@ a:hover {
 }
 h1 {
 	font-weight: 300;
-	font-size: 45px;
-	line-height: 1.1em;
+	font-size: 3.2142857143rem;
+	line-height: 3.2142857143rem;
 }
 h2 {
 	font-weight: 400;
-	font-size: 20px;
-	line-height: 22px;
+	font-size: 1.4285714286rem;
+	line-height: 1.5714285714rem;
 }
 p {
 	color: #778899;
-	line-height: 25px;
-	margin: 1em 0;
+	font-size: 1rem;
+	line-height: 1.7857142857rem;
+	margin: 1rem 0;
 }
 i {
 	margin: 0 0 0 5px;
 }
 .container {
-	max-width: 1170px;
+	max-width: 60.9375%; /* 1170/1920 */
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 0 1.282051282%;
 }
 .text-center {
 	text-align: center;
@@ -100,7 +102,7 @@ i {
 				}
 				.overlay ul li i {
 					display: block;
-					font-size: 40px;
+					font-size: 2.8571428571rem;
 					margin: 0 0 10px 0;
 				}
 	
@@ -152,8 +154,8 @@ header.top-header {
 			}
 			.nav-btn p {
 				text-transform: uppercase;
-				position: relative;
-				right: 45px;
+				position: absolute;
+				right: 15px;
 				top: 5px;
 				margin: 0;
 				line-height: inherit;
@@ -161,8 +163,10 @@ header.top-header {
 			}
 			.header-section .navbar .nav-btn .nav-link {
 				height: 25px;
-				position: relative;
-				top: -20px;
+				width: 35px;
+				position: fixed;
+				/*top: -20px;*/
+				z-index: 1;
 				display: block;
 			}
 				.nav-btn span, .nav-btn span::before, .nav-btn span::after {
@@ -173,6 +177,7 @@ header.top-header {
 					width: 35px;
 					height: 5px;
 					background: #fff;
+					box-shadow: 0px 0px 1px #3F6184;
 					cursor: pointer;
 					border-radius: 1px;
 					transition: all .5s ease;
@@ -188,6 +193,7 @@ header.top-header {
 					}
 					.nav-btn .open span, .nav-btn .open span:before, .nav-btn .open span:after {
 						transition: all .5s ease;
+						box-shadow: none;
 					}
 					.nav-btn .open span {
 						background: transparent;
@@ -210,7 +216,7 @@ header.top-header {
 			padding: 20px 50px;
 			margin: 0 10px 10px 0;
 			display: inline-block;
-			font-size: 16px;
+			font-size: 1.1428571429rem;
 			border-radius: 3px;
 		}
 			.btn.btn-white {
@@ -250,7 +256,7 @@ header.top-header {
 			vertical-align: middle;
 		}
 		.features-section .video h2 i {
-			font-size: 50px;
+			font-size: 3.5714285714rem;
 		}
 
 	/* ========================================
@@ -315,8 +321,8 @@ header.top-header {
 				margin: 0 25px 0 0;
 				border: 2px solid #4e9ba3;
 				border-radius: 50%;
-				font-size: 25px;
-				line-height: 90px;
+				font-size: 1.7857142857rem;
+				line-height: 6.4285714286rem;
 				text-align: center;
 			}
 				.feature-icon i {
@@ -350,7 +356,6 @@ header.top-header {
 					position: relative;
 					top: -60px;
 					left: 20%;
-					/*z-index: 1;*/
 					min-height: 670px;
 					width: 359px;
 					background: url(../img/iphone-skeleton.png) center center no-repeat;
@@ -365,7 +370,7 @@ header.top-header {
 						background: url(../img/screen1.jpg) center center no-repeat;
 					}
 				.featured-product h2 {
-					font-size: 22px;
+					font-size: 1.5714285714rem;
 				}
 				.featured-product p {
 					color: #fff;
@@ -378,7 +383,6 @@ header.top-header {
 					float: left;
 					width: 64px;
 					height: 64px;
-					/*border: 2px solid #fff;*/
 					border-radius: 50%;
 					margin: 0 20px 0 0;
 					text-align: center;
@@ -404,7 +408,7 @@ header.top-header {
 				padding: 170px 0 100px 0;
 			}
 				.screenshots-intro h2 {
-					font-size: 22px;
+					font-size: 1.5714285714rem;
 					margin-bottom: 20px;
 				}
 				.screenshots-intro p {
@@ -448,7 +452,7 @@ header.top-header {
 						width: 100%;
 						height: 100%;
 						background: rgba(63, 97, 132, 0.85);
-						font-size: 14px;
+						font-size: 1rem;
 						text-transform: uppercase;
 						transition: all .75s ease;
 					}
@@ -471,7 +475,7 @@ header.top-header {
 								color: #fff;
 							}
 							.screenshot-grid .caption a > i {
-								font-size: 35px;
+								font-size: 2.5rem;
 							}
 			
 			/* ========================================
@@ -485,8 +489,8 @@ header.top-header {
 				padding: 120px 0;
 			}
 			.download-section h2 {
-				font-size: 40px;
-				line-height: 1.1em;
+				font-size: 2.8571428571rem;
+				line-height: 3.1428571429rem;
 				font-weight: 400;
 				margin: 0 0 15px 0;
 			}
@@ -504,14 +508,14 @@ header.top-header {
 					display: block;
 					width: 30%;
 					float: left;
-					margin: 0.67em 0;
+					margin: 10px 0;
 				}
 					.bottom-footer .logo img {
 						vertical-align: middle;
 					}
 					.bottom-footer p {
 						color: #c7cacc;
-						font-size: 12px;
+						font-size: 1rem;
 					}
 					.bottom-footer p > a {
 						color: #73d0da;
@@ -523,7 +527,7 @@ header.top-header {
 					display: block;
 					float: right;
 					width: 70%;
-					margin: 0.67em 0;
+					margin: 10px 0;
 				}
 					.bottom-nav ul {
 						width: 100%;
@@ -542,30 +546,6 @@ header.top-header {
 /* ========================================
 Begin Media Queries
 ======================================== */
-@media (max-width: 767px) {
-	.container {
-		padding: 0 30px;
-	}
-}
-@media (min-width: 768px) and (max-width: 1139px) {
-	.container {
-		padding: 0 30px;
-	}
-	.half {
-		width: 100%;
-	}
-	.feature {
-		width: 100%;
-	}
-	article.screenshots-intro {
-		padding: 100px 0;
-	}
-	.screenshot-grid li {
-		width: 100%;
-	}
-}
-
-
 /* Visibilty Classes */
 .hide {
     display: none;
@@ -632,6 +612,69 @@ Begin Media Queries
 	        display: none !important ;
 	    }
 	}
+
+@media (min-width: 1140px) and (max-width: 1495px) {
+	.feature-icon, .feature-description {
+		display: inline-block;
+		float: none;
+	}
+	.container {
+		max-width: 80%;
+	}
+	.feature {
+		text-align: center;
+	}
+	.feature-icon {
+		margin: 0 0 25px;
+	}
+	.feature-description {
+		width: 100%;
+	}
+}
+@media (min-width: 768px) and (max-width: 1139px) {
+	html, html a {
+		font-size: 16px;
+	}
+	h1 { font-size: ; }
+	h2 { font-size: ; }
+	p {
+		font-size: 1.125rem;
+	}
+	.container {
+		max-width: 80%;
+	}
+	.half {
+		width: 100%;
+	}
+	.feature-icon, .feature-description {
+		display: inline-block;
+		float: none;
+	}
+	.feature {
+		text-align: center;
+	}
+	.feature-icon {
+		margin: 0 0 25px;
+	}
+	.feature-description {
+		width: 100%;
+	}
+	article.screenshots-intro {
+		padding: 100px 0;
+	}
+	.screenshot-grid li {
+		width: 50%;
+	}
+	.bottom-nav ul > li {
+		margin: 10px 10% 10px 0;
+	}
+}
+@media (max-width: 767px) {
+	.container {
+		padding: 0 30px;
+		max-width: 100%;
+	}
+}
 
 
 
