@@ -77,6 +77,10 @@ i {
 			display: inline-block;
 			list-style: none;
 		}
+			.overlay ul div {
+				display: inline-block;
+				margin: 0 15px 0 0;
+			}
 			.overlay ul li {
 				display: block;
 				float: left;
@@ -645,6 +649,10 @@ Begin Media Queries
 	}
 	.half {
 		width: 100%;
+	}
+	.overlay ul div {
+		display: block;
+		margin: 0 0 15px 0;
 	}
 	.feature-icon, .feature-description {
 		display: inline-block;
