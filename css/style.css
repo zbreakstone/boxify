@@ -674,7 +674,7 @@ Begin Media Queries
 		width: 75%;
 	}
 	.bottom-nav ul > li {
-		margin: 10px 10% 10px 0;
+		margin: 10px 5% 10px 0;
 	}
 }
 @media (max-width: 767px) {
@@ -683,14 +683,3 @@ Begin Media Queries
 		max-width: 100%;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
