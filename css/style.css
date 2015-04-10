@@ -669,7 +669,7 @@ Begin Media Queries
 		display: inline-block;
 		width: 25%;
 	}
-	.bottom-nav {
+	.bottom-footer .bottom-nav {
 		display: inline-block;
 		width: 75%;
 	}
