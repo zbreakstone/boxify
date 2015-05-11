@@ -4,6 +4,9 @@
  ======================================== */
 
 * { box-sizing: border-box; }
+html, body {
+	font: 400 14px/1.42857143 'Nunito';
+}
 html {
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 	 -webkit-font-smoothing: antialiased;
@@ -98,7 +101,7 @@ i {
 					color: #fff;
 					text-transform: uppercase;
 					font-weight: 400;
-					font-size: 15px;
+					font-size: 1.0714285714rem;
 				}
 				.overlay ul li a:hover {
 					border: 2px solid #73d0da;
@@ -708,6 +711,7 @@ Begin Media Queries
 		margin-right: 10px;
 	}
 	.overlay ul li a {
+		font-size: 0.9375rem;
 		padding: 25px;
 		min-width: 165px;
 	}
@@ -777,3 +781,28 @@ Begin Media Queries
 		margin: 10px 0;
 	}
 }
+@media (max-width: 320px) {
+	html {
+		font-size: 16px;
+	}
+	.overlay ul > div {
+		margin: 0 0 5px 0;
+	}
+	.overlay ul li {
+		margin: 0 5px 0 0;
+	}
+	.overlay ul li a {
+		padding: 25px 0;
+		font-size: 0.7142857143rem;
+		min-width: 140px;
+	}
+}
+
+
+
+
+
+
+
+
+
